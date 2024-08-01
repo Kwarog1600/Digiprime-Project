@@ -60,7 +60,9 @@
                     <t t-name="kanban-box">
                         <div class="oe_kanban_global_click">
                             <div class="oe_kanban_details">
-                            <field name="photo" widget="image" class="o_kanban_image_fill_left" options="{'zoom': true, 'zoom_delay': 1000, 'background': true, 'preventClicks': false}"/>
+                                <div class="oe_kanban_image">
+                                    <field name="photo" widget="image" style="width: 20px; height: 20px;" options="{'zoom': true, 'zoom_delay': 1000, 'background': true, 'preventClicks': false}"/>
+                                </div>
                                 <div class="oe_kanban_title">
                                     <span class="oe_kanban_record_id">
                                         <field name="studentId"/>
