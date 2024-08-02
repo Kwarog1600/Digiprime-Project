@@ -6,5 +6,7 @@ class Student(models.Model):
     _name = 'school.student.programs'
     _description = 'Student Program List'
 
-    programid = fields.Integer(string='ID')
-    programname = fields.Char(string='Program Name')
+    subjectid = fields.Char(string='ID')
+    subjecttitle = fields.Char(string='Subject Title')
+    units = fields.Integer(string='Units')
+    instructor = fields.Char(string='Instructor')
