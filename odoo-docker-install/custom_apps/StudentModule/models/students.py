@@ -24,7 +24,6 @@ class Student(models.Model):
     email = fields.Char(string='Email Address')
 
     em_contact = fields.One2many(comodel_name='school.emergency.contact', inverse_name='school_student_id', string='Emergency Contact')
-
     @api.depends('birthdate')
     def _compute_age(self):
         for record in self:

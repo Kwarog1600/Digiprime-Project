@@ -13,6 +13,7 @@
     
     'data' : [
         'security/ir.model.access.csv',
+        'data/data.xml',
         'views/school_student.xml'
     ],
 

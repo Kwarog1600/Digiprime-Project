@@ -13,6 +13,7 @@
                     </group>
                     <group>
                         <field name="studentId"/>
+                        
                     </group>
                     <group string="Basic Information">
                             <field name="surname"/>
@@ -129,7 +130,6 @@
     <menuitem
         id="Students_root"
         name="Students"
-       
         sequence="10"/>
 
     <menuitem
