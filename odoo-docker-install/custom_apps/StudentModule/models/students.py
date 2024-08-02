@@ -19,9 +19,12 @@ class Student(models.Model):
     birthplace = fields.Char(string = "Place of Birth")
     age = fields.Integer(string='Age', compute='_compute_age')
     photo = fields.Binary(string='Photo', attachment=True)
+    address = fields.Char(string='Address')
+    phonenumber = fields.Char(string='Phone Number')
+    email = fields.Char(string='Email Address')
 
     em_contact = fields.One2many(comodel_name='school.emergency.contact', inverse_name='school_student_id', string='Emergency Contact')
-    
+
     @api.depends('birthdate')
     def _compute_age(self):
         for record in self:

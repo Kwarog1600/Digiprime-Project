@@ -19,11 +19,16 @@
                             <field name="firstname"/>
                             <field name="midname"/>
                     </group>
-                    <group string="Others">
+                    <group string="Personal Information">
                         <field name="gender" />
                         <field name="birthdate"/>
                         <field name="birthplace" />
                         <field name="age" />
+                    </group>
+                    <group string="Contact Information">
+                        <field name="address" />
+                        <field name="phonenumber" />
+                        <field name="email" />
                     </group>
                     <group string="Emergency Contacts">
                         <field name="em_contact">
