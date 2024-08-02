@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+    <record id="stnumber_sequence" model="ir.sequence">
+        <field name="name">Student</field>
+        <field name="code">school.student</field>
+        <field name="prefix">stn</field>
+        <field name="padding">5</field>
+        <field name="company_id"></field>>
+    </record>
+        
+    
+    </data>
+    
+
+</odoo>
