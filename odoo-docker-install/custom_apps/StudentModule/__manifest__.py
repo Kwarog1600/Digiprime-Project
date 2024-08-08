@@ -13,7 +13,8 @@
     
     'data' : [
         'security/ir.model.access.csv',
-        'views/school_student.xml'
+        'views/school_student.xml',
+        'views/student_report.xml'
     ],
 
     'auto_install': False,

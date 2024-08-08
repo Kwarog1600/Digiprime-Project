@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
     <odoo>
+
+    <!--Search-->
+    <record id="student_search" model="ir.ui.view">
+        <field name="name">school.student.search</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <search string="Students">
+                <field name="studentId" />
+                <field name="surname" />
+                <field name="firstname" />
+                <field name="gender" />
+                <separator/>
+                
+            </search>
+        </field>
+    </record>
+
     <!--Form-->
     <record id="student_form" model="ir.ui.view">
         <field name="name">school.student.form</field>
         <field name="model">school.student</field>
         <field name="arch" type="xml">
-            <form string="Add New Student">
+            <form string="Student List">
                 <sheet>
                     <!-- Existing groups and fields -->
                     <group string="Attach Photo">
@@ -107,6 +124,8 @@
                     <field name="surname" />
                     <field name="firstname" />
                     <field name="midname" />
+                    <field name="gender" />
+
                 </tree>  
         </field>
     </record>
