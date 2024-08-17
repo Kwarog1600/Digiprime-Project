@@ -7,7 +7,7 @@
         <field name="code">school.student</field>
         <field name="prefix">stn</field>
         <field name="padding">5</field>
-        <field name="company_id"></field>>
+        <field name="company_id"></field>
     </record>
         
     

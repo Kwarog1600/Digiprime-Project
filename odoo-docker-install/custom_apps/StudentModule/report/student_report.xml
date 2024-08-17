@@ -1,13 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="student_report_detail" model="ir.actions.report">
-        <field name="name">Student details</field>
-        <field name="model">school.student</field>
-        <field name="report_type">qweb-pdf</field>
-        <field name="report_name">school_student.report_id_detail</field>
-        <field name="report_file">school_student.report_id_detail</field>
-        <field name="binding_model_id" ref="model_school_student"/>
-        <field name="binding_type">report</field>
-    </record>
 
+    <!-- Define the Report -->
+    <report
+        id="student_report_detail"
+        string="Student Details"
+        model="school.student"
+        report_type="qweb-pdf"
+        name="StudentModule.student_report"
+        file="StudentModule.student_report"
+        attachment_use="False"
+    /><!-- Define the QWeb Template -->
+   
+
+    <report
+        id="id_card_report_template"
+        string="Generate ID Template"
+        model="school.student"
+        report_type="qweb-pdf"
+        name="StudentModule.id_card_report"
+        file="StudentModule.id_card_report"
+        attachment_use="False"
+    />
 </odoo>

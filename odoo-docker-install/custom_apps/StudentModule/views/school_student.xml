@@ -82,10 +82,11 @@
                 <templates>
                     <t t-name="kanban-box">
                         <div class="oe_kanban_global_click">
+                            <field name="id" invisible="1"/>
+                            <div class="oe_kanban_image">
+                                <img t-att-src="kanban_image('school.student', 'photo', record.id.raw_value)" alt="Avatar" class="o_image_64_cover rounded-circle"/>
+                            </div>
                             <div class="oe_kanban_details">
-                                <div class="oe_kanban_image">
-                                    <field name="photo" widget="image" style="width: 20px; height: 20px;" options="{'zoom': true, 'zoom_delay': 1000, 'background': true, 'preventClicks': false}"/>
-                                </div>
                                 <div class="oe_kanban_title">
                                     <span class="oe_kanban_record_id">
                                         <field name="studentId"/>
